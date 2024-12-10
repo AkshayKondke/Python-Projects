@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> cf4845a96c585d6c0e6f1c149892b510bf01d298
 # 🐍 Python Projects
 
 Welcome to the **Python Projects** repository! This is a collection of Python-based projects showcasing various programming concepts, algorithms, and fun interactive games.
