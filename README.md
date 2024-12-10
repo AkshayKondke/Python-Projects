@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> cf4845a96c585d6c0e6f1c149892b510bf01d298
 # 🐍 Python Projects
 
 Welcome to the **Python Projects** repository! This is a collection of Python-based projects showcasing various programming concepts, algorithms, and fun interactive games.
@@ -19,8 +15,19 @@ Welcome to the **Python Projects** repository! This is a collection of Python-ba
 
 ---
 
+### 🔐 Password Manager
+- A simple command-line password manager that allows you to securely store and view your passwords using encryption.
+- Features:
+  - **Add passwords**: Encrypt and store passwords for various accounts.
+  - **View passwords**: Decrypt and view passwords stored for different accounts.
+  - **Master password**: Access your password manager with a master password.
+  - **Encryption**: Uses the `cryptography` library for secure password encryption.
+
+---
+
 ## 🔧 Prerequisites
 - Python 3.x installed on your system.
+- `cryptography` library for encryption in the **Password Manager** project.
 
 ---
 
