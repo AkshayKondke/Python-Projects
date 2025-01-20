@@ -6,7 +6,7 @@ Welcome to the **Python Projects** repository! This is a collection of Python-ba
 
 ## 📋 Projects Included
 
-### 🎮 Quiz Game 🧠
+### _1_. 🎮 Quiz Game 🧠
 - A command-line quiz game that tests your knowledge of common technical abbreviations.
 - **Features**:
   - 🎉 Celebratory feedback for correct answers.
@@ -25,59 +25,63 @@ Welcome to the **Python Projects** repository! This is a collection of Python-ba
 
 ---
 
-### 🔐 Password Manager 🔒
-- A simple command-line password manager that allows you to securely store and view your passwords using encryption.
-- **Features**:
-  - ➕ **Add passwords**: Encrypt and store passwords for various accounts.
-  - 🔍 **View passwords**: Decrypt and view passwords stored for different accounts.
-  - 🛡 **Master password**: Access your password manager with a master password.
-  - 🔒 **Encryption**: Uses the `cryptography` library for secure password encryption.
+### _2_.🌦️ Weather App
 
-#### 📚 Prerequisites:
-- Python 3.x installed on your system.
-- Install the `cryptography` library:
-  ```bash
-  pip install cryptography
-  ```
+This is a simple Python-based Weather App that fetches and displays real-time weather data for a given city using the [Weatherbit API](https://www.weatherbit.io/).
 
-#### 🚀 How to Run:
-1. Run the `password_manager.py` script:
-   ```bash
-   python password_manager.py
-   ```
-2. 🖥 Follow the on-screen instructions to add or retrieve passwords.
+#### ✨ Features
+- 🌡️ Get the current temperature, weather description, and timezone for any city.
+- 🖥️ Simple and easy-to-use command-line interface.
 
----
-
-### 📱 Phone Number Information Extractor 🌐
-- A tool to extract useful metadata from phone numbers.
-- **Features**:
-  - 🛠 Parse and validate phone numbers.
-  - 🌍 Retrieve geographical location and time zones.
-  - 📡 Identify carrier information.
-  - ✅ Check if a phone number is valid and possible.
-  - ⚠️ Gracefully handles invalid inputs with error messages.
-
-#### 📚 Prerequisites:
-- Python 3.x installed on your system.
-- Install the `phonenumbers` library:
-  ```bash
-  pip install phonenumbers
-  ```
-
-#### 🚀 How to Run:
-1. Run the `phone_info_extractor.py` script:
-   ```bash
-   python phone_info_extractor.py
-   ```
-2. 📞 Enter a phone number in the format `+<country_code><number>` when prompted.
-
----
-
-## 🔧 Prerequisites
+#### 📋 Prerequisites
+Before running this application, ensure you have the following:
 - 🐍 Python 3.x installed on your system.
-- 🔒 `cryptography` library for encryption in the **Password Manager** project.
-- 📞 `phonenumbers` library for the **Phone Number Information Extractor** project.
+- 🔑 An API key from Weatherbit. You can get one by signing up at [Weatherbit.io](https://www.weatherbit.io/).
+
+#### ⚙️ Installation
+1. 📥 Clone or download this repository to your local system.
+2. 📦 Install the required Python libraries:
+   ```bash
+   pip install requests
+   ```
+3. 🔧 Open the script file and replace `your api key here` with your actual Weatherbit API key:
+   ```python
+   api_key = "your api key here"
+   ```
+
+#### 🚀 Usage
+1. 📂 Navigate to the directory containing the script.
+2. ▶️ Run the script:
+   ```bash
+   python weather_app.py
+   ```
+3. ✏️ Enter the name of the city when prompted.
+   Example:
+   ```
+   Enter the city name: London
+   ```
+4. 📊 The app will display the current weather information for the entered city, including:
+   - 📍 City name
+   - 🌡️ Temperature
+   - 🌥️ Weather description
+   - ⏰ Timezone
+
+#### 🛠️ Example Output
+```
+Welcome to Weather App!! 🌦️
+
+Enter the city name: London
+City: London
+Temperature: 15°C
+Weather: Partly cloudy
+Timezone: Europe/London
+```
+
+#### ⚠️ Error Handling
+If the app is unable to fetch weather data (e.g., invalid API key, incorrect city name, or network issues), you will see the following message:
+```
+Unable to fetch weather data. Please try again.
+```
 
 ---
 
@@ -91,3 +95,9 @@ Welcome to the **Python Projects** repository! This is a collection of Python-ba
    cd Python-Projects
    ```
 3. Follow the instructions for each project as detailed above. 📜
+
+---
+
+## 📜 License
+This project is licensed under the MIT License. Feel free to use and modify it as needed.
+
